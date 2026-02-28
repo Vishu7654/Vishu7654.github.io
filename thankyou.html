@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting...</title>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+fbq('track', 'Lead');
+</script>
+
+<style>
+body{
+margin:0;
+background:#0f172a;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:100px 20px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Connecting You...</h2>
+<p>Please wait while we redirect you to Telegram.</p>
+
+<script>
+setTimeout(function(){
+window.location.href="https://t.me/YOUR_PRIVATE_LINK";
+},1500);
+</script>
+
+</body>
+</html>
