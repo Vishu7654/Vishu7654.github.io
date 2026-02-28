@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<title>Connecting...</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Redirecting...</title>
 
-<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,31 +16,27 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 
 fbq('init', 'YOUR_PIXEL_ID');
 fbq('track', 'PageView');
-fbq('track', 'Lead');
+fbq('trackCustom', 'Subscribe');
+
+setTimeout(function(){
+window.location.href="YOUR_TELEGRAM_LINK";
+},1500);
 </script>
 
 <style>
 body{
-margin:0;
-background:#0f172a;
-color:white;
 font-family:Arial;
 text-align:center;
-padding:100px 20px;
+padding-top:100px;
+background:#f4f6f9;
 }
 </style>
 
 </head>
 <body>
 
-<h2>Connecting You...</h2>
-<p>Please wait while we redirect you to Telegram.</p>
-
-<script>
-setTimeout(function(){
-window.location.href="https://t.me/YOUR_PRIVATE_LINK";
-},1500);
-</script>
+<h2>Connecting You to Telugu Fantasy...</h2>
+<p>Please wait while we verify your access.</p>
 
 </body>
 </html>
