@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Trading Community</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+text-align:center;
+}
+
+.container{
+padding:40px 20px;
+}
+
+.logo{
+width:140px;
+height:140px;
+border-radius:50%;
+border:4px solid #00ff88;
+box-shadow:0 0 20px #00ff88;
+margin:20px auto;
+overflow:hidden;
+}
+
+.logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+h1{
+font-size:26px;
+margin:15px 0 5px;
+}
+
+.sub{
+opacity:0.9;
+font-size:15px;
+}
+
+.counter{
+color:#00ff88;
+font-size:20px;
+margin-top:10px;
+font-weight:bold;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:linear-gradient(45deg,#ff00cc,#ff0066);
+border-radius:50px;
+color:white;
+font-weight:bold;
+text-decoration:none;
+font-size:17px;
+box-shadow:0 0 20px #ff00cc;
+}
+
+.card{
+margin:35px auto;
+max-width:350px;
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+}
+
+.card h2{
+color:#00ccff;
+margin-bottom:15px;
+}
+
+ul{
+text-align:left;
+padding-left:18px;
+}
+
+li{
+margin:8px 0;
+font-size:14px;
+}
+
+.disclaimer{
+margin-top:30px;
+font-size:12px;
+opacity:0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<img src="https://via.placeholder.com/300x300.png?text=LOGO">
+</div>
+
+<h1>Join Our Elite Trading Community</h1>
+<p class="sub">Premium signals & market insights delivered directly to Telegram</p>
+
+<div class="counter">
+<span id="count">0</span>+ Active Members
+</div>
+
+<a class="btn" href="thankyou.html">🚀 JOIN OUR COMMUNITY</a>
+
+<div class="card">
+<h2>What You Get</h2>
+<ul>
+<li>High precision entry & exit signals</li>
+<li>Advanced technical analysis</li>
+<li>Risk management strategies</li>
+<li>Daily market insights</li>
+<li>100% free access</li>
+</ul>
+</div>
+
+<p class="disclaimer">
+This platform provides educational market insights only. We do not promote gambling or betting.
+</p>
+
+</div>
+
+<script>
+// Animated Counter
+let count = 0;
+let target = 3842; // change member number here
+let interval = setInterval(()=>{
+count += 50;
+if(count >= target){
+count = target;
+clearInterval(interval);
+}
+document.getElementById("count").innerText = count;
+},20);
+
+// Exit intent popup (mobile friendly fallback)
+window.onbeforeunload = function(){
+return "Wait! Join our community before leaving.";
+};
+</script>
+
+</body>
+</html>
